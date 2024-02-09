@@ -1,0 +1,533 @@
+# This file instructs Redocly's linter to ignore the rules contained for specific parts of your API.
+# See https://redoc.ly/docs/cli/ for more information.
+openapi/v2.yaml:
+  no-empty-servers:
+    - '#/openapi'
+  info-license:
+    - '#/info'
+  operation-operationId:
+    - '#/paths/~1api~1v1~1authentication~1invitations~1accept/put/operationId'
+    - '#/paths/~1api~1v1~1authentication~1invitations~1validate/get/operationId'
+    - '#/paths/~1api~1v1~1authentication~1mfa~1register/post/operationId'
+    - '#/paths/~1api~1v1~1authentication~1mfa_tokens/post/operationId'
+    - '#/paths/~1api~1v1~1authentication~1mfa_tokens~1status/get/operationId'
+    - '#/paths/~1api~1v1~1authentication~1mfa_tokens~1verify/post/operationId'
+    - >-
+      #/paths/~1api~1v1~1authentication~1mfa_tokens~1request_sms/post/operationId
+    - '#/paths/~1api~1v1~1authentication~1passwords~1forgot/post/operationId'
+    - >-
+      #/paths/~1api~1v1~1authentication~1passwords~1validate_reset_token/get/operationId
+    - '#/paths/~1api~1v1~1authentication~1passwords~1reset/put/operationId'
+    - '#/paths/~1api~1v1~1authentication~1token/post/operationId'
+    - >-
+      #/paths/~1api~1v1~1collection~1organisations~1{organisation_id}~1funding_instructions~1{virtual_account_number}/get/operationId
+    - >-
+      #/paths/~1api~1v1~1collection~1organisations~1{organisation_id}~1funding_instructions~1{virtual_account_number}~1accept_changes/put/operationId
+    - '#/paths/~1api~1v1~1collection~1orders/get/operationId'
+    - '#/paths/~1api~1v1~1collection~1orders~1{uuid}/get/operationId'
+    - >-
+      #/paths/~1api~1v1~1collection~1orders~1find_by_uuid_or_inpay_external_reference/get/operationId
+    - '#/paths/~1api~1v1~1collection~1payments~1{uuid}/get/operationId'
+    - >-
+      #/paths/~1api~1v1~1collection~1payments~1find_by_uuid_or_inpay_unique_reference/get/operationId
+    - >-
+      #/paths/~1api~1v1~1collection~1stats~1orders~1status_counts_reports/get/operationId
+    - '#/paths/~1api~1v1~1customer~1business_units/get/operationId'
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{id}~1configurations/get/operationId
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1contracted_products/get/operationId
+    - '#/paths/~1api~1v1~1customer~1current_user/get/operationId'
+    - '#/paths/~1api~1v1~1customer~1organisations/get/operationId'
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{id}~1set_default/post/operationId
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{id}~1set_current/post/operationId
+    - '#/paths/~1api~1v1~1customer~1roles/get/operationId'
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users/post/operationId
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1{id}/get/operationId
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1{id}/patch/operationId
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1/get/operationId
+    - >-
+      #/paths/~1api~1v1~1fx~1organisations~1{organisation_id}~1exchange_rate/get/operationId
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches/get/operationId
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches~1{id}/get/operationId
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches~1{id}~1approve/post/operationId
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches~1{id}~1reject/post/operationId
+    - '#/paths/~1api~1v1~1payouts~1local_instruments/get/operationId'
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisation_product_currencies/get/operationId
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1payout_drafts/get/operationId
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1payout_drafts~1{id}/get/operationId
+    - '#/paths/~1api~1v1~1payouts~1payout_request_csv_batches/get/operationId'
+    - '#/paths/~1api~1v1~1payouts~1payout_request_csv_batches/post/operationId'
+    - '#/paths/~1api~1v1~1payouts~1payout_request_draft/get/operationId'
+    - '#/paths/~1api~1v1~1payouts~1payout_request_draft/post/operationId'
+    - '#/paths/~1api~1v1~1payouts~1payout_request_draft/delete/operationId'
+    - '#/paths/~1api~1v1~1payouts~1payout_request_draft/patch/operationId'
+    - '#/paths/~1api~1v1~1payouts~1payout_request_draft~1publish/post/operationId'
+    - '#/paths/~1api~1v1~1payouts~1payout_request_reason_codes/get/operationId'
+    - '#/paths/~1api~1v1~1payouts~1payout_requests~1{reference}/get/operationId'
+    - '#/paths/~1api~1v1~1payouts~1payout_requests/get/operationId'
+    - '#/paths/~1api~1v1~1payouts~1product_schemas/get/operationId'
+    - '#/paths/~1api~1v1~1payouts~1schemas~1{id}~1csv_template/get/operationId'
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1stats~1reason_codes_reports/get/operationId
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1stats~1state_category_counts_reports/get/operationId
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1stats~1state_category_reason_code_counters/get/operationId
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1stats~1states_reports/get/operationId
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1account_statement_reports/get/operationId
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1organisations~1{organisation_id}~1accounts/get/operationId
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1funding/post/operationId
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1reports/post/operationId
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1reports~1{uuid}/get/operationId
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1reports~1{uuid}~1download/get/operationId
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1statement/get/operationId
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1summary/get/operationId
+    - '#/paths/~1api~1v1~1reconciliation~1transactions/get/operationId'
+    - '#/paths/~1api~1v1~1system~1feature_flags/get/operationId'
+  spec:
+    - >-
+      #/paths/~1api~1v1~1authentication~1invitations~1accept/put/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1invitations~1accept/put/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1invitations~1validate/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1invitations~1validate/get/responses/403/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1invitations~1validate/get/responses/404/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1mfa~1register/post/responses/201/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1mfa~1register/post/responses/401/examples
+    - '#/paths/~1api~1v1~1authentication~1mfa_tokens/post/responses/201/examples'
+    - '#/paths/~1api~1v1~1authentication~1mfa_tokens/post/responses/401/examples'
+    - '#/paths/~1api~1v1~1authentication~1mfa_tokens/post/responses/422/examples'
+    - >-
+      #/paths/~1api~1v1~1authentication~1mfa_tokens~1status/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1mfa_tokens~1status/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1mfa_tokens~1status/get/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1mfa_tokens~1verify/post/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1mfa_tokens~1verify/post/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1mfa_tokens~1verify/post/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1mfa_tokens~1request_sms/post/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1mfa_tokens~1request_sms/post/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1mfa_tokens~1request_sms/post/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1passwords~1forgot/post/responses/201/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1passwords~1validate_reset_token/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1passwords~1validate_reset_token/get/responses/403/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1passwords~1validate_reset_token/get/responses/404/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1passwords~1reset/put/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1authentication~1passwords~1reset/put/responses/422/examples
+    - '#/paths/~1api~1v1~1authentication~1token/post/responses/201/examples'
+    - '#/paths/~1api~1v1~1authentication~1token/post/responses/400/examples'
+    - '#/paths/~1api~1v1~1authentication~1token/post/responses/401/examples'
+    - >-
+      #/paths/~1api~1v1~1collection~1organisations~1{organisation_id}~1funding_instructions~1{virtual_account_number}/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1collection~1organisations~1{organisation_id}~1funding_instructions~1{virtual_account_number}/get/responses/200/content/application~1json/schema/properties/data/type
+    - >-
+      #/paths/~1api~1v1~1collection~1organisations~1{organisation_id}~1funding_instructions~1{virtual_account_number}/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1collection~1organisations~1{organisation_id}~1funding_instructions~1{virtual_account_number}/get/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1collection~1organisations~1{organisation_id}~1funding_instructions~1{virtual_account_number}~1accept_changes/put/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1collection~1organisations~1{organisation_id}~1funding_instructions~1{virtual_account_number}~1accept_changes/put/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1collection~1organisations~1{organisation_id}~1funding_instructions~1{virtual_account_number}~1accept_changes/put/responses/422/examples
+    - '#/paths/~1api~1v1~1collection~1orders/get/responses/200/examples'
+    - >-
+      #/paths/~1api~1v1~1collection~1orders/get/responses/200/content/application~1json/schema/properties/required
+    - '#/paths/~1api~1v1~1collection~1orders/get/responses/400/examples'
+    - '#/paths/~1api~1v1~1collection~1orders/get/responses/401/examples'
+    - '#/paths/~1api~1v1~1collection~1orders~1{uuid}/get/responses/200/examples'
+    - '#/paths/~1api~1v1~1collection~1orders~1{uuid}/get/responses/404/examples'
+    - >-
+      #/paths/~1api~1v1~1collection~1orders~1find_by_uuid_or_inpay_external_reference/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1collection~1orders~1find_by_uuid_or_inpay_external_reference/get/responses/404/examples
+    - >-
+      #/paths/~1api~1v1~1collection~1payments~1{uuid}/get/responses/200/content/application~1json/schema/oneOf
+    - '#/paths/~1api~1v1~1collection~1payments~1{uuid}/get/responses/404/examples'
+    - >-
+      #/paths/~1api~1v1~1collection~1payments~1find_by_uuid_or_inpay_unique_reference/get/responses/200/content/application~1json/schema/oneOf
+    - >-
+      #/paths/~1api~1v1~1collection~1payments~1find_by_uuid_or_inpay_unique_reference/get/responses/404/examples
+    - >-
+      #/paths/~1api~1v1~1collection~1stats~1orders~1status_counts_reports/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1collection~1stats~1orders~1status_counts_reports/get/responses/200/content/application~1json/schema/properties/required
+    - >-
+      #/paths/~1api~1v1~1collection~1stats~1orders~1status_counts_reports/get/responses/400/examples
+    - >-
+      #/paths/~1api~1v1~1collection~1stats~1orders~1status_counts_reports/get/responses/401/examples
+    - '#/paths/~1api~1v1~1customer~1business_units/get/responses/200/examples'
+    - '#/paths/~1api~1v1~1customer~1business_units/get/responses/401/examples'
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{id}~1configurations/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{id}~1configurations/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{id}~1configurations/get/responses/404/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1contracted_products/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1contracted_products/get/responses/200/content/application~1json/schema/properties/meta/type
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1contracted_products/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1contracted_products/get/responses/404/examples
+    - '#/paths/~1api~1v1~1customer~1current_user/get/responses/200/examples'
+    - >-
+      #/paths/~1api~1v1~1customer~1current_user/get/responses/200/content/application~1json/schema/properties/user/type
+    - '#/paths/~1api~1v1~1customer~1current_user/get/responses/401/examples'
+    - '#/paths/~1api~1v1~1customer~1organisations/get/responses/200/examples'
+    - '#/paths/~1api~1v1~1customer~1organisations/get/responses/401/examples'
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{id}~1set_default/post/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{id}~1set_default/post/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{id}~1set_default/post/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{id}~1set_current/post/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{id}~1set_current/post/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{id}~1set_current/post/responses/422/examples
+    - '#/paths/~1api~1v1~1customer~1roles/get/responses/200/examples'
+    - '#/paths/~1api~1v1~1customer~1roles/get/responses/401/examples'
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users/post/requestBody/content/application~1json/schema/data
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users/post/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users/post/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users/post/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1{id}/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1{id}/get/responses/200/content/application~1json/schema/properties/data/type
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1{id}/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1{id}/get/responses/404/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1{id}/patch/requestBody/content/application~1json/schema/data
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1{id}/patch/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1{id}/patch/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1{id}/patch/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1/get/responses/200/content/application~1json/schema/properties/data/items/type
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1/get/responses/404/examples
+    - >-
+      #/paths/~1api~1v1~1fx~1organisations~1{organisation_id}~1exchange_rate/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1fx~1organisations~1{organisation_id}~1exchange_rate/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1fx~1organisations~1{organisation_id}~1exchange_rate/get/responses/404/examples
+    - >-
+      #/paths/~1api~1v1~1fx~1organisations~1{organisation_id}~1exchange_rate/get/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches/get/responses/200/content/application~1json/schema/properties/meta/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches/get/responses/404/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches~1{id}/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches~1{id}/get/responses/200/content/application~1json/schema/properties/data/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches~1{id}/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches~1{id}/get/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches~1{id}~1approve/post/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches~1{id}~1approve/post/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches~1{id}~1approve/post/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches~1{id}~1reject/post/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches~1{id}~1reject/post/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches~1{id}~1reject/post/responses/422/examples
+    - '#/paths/~1api~1v1~1payouts~1local_instruments/get/responses/200/examples'
+    - '#/paths/~1api~1v1~1payouts~1local_instruments/get/responses/401/examples'
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisation_product_currencies/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisation_product_currencies/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1payout_drafts/get/parameters/8/schema/required
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1payout_drafts/get/parameters/8/schema/properties/filter/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1payout_drafts/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1payout_drafts/get/responses/200/content/application~1json/schema/properties/meta/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1payout_drafts/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1payout_drafts~1{id}/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1payout_drafts~1{id}/get/responses/200/content/application~1json/schema/properties/data/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1payout_drafts~1{id}/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1payout_drafts~1{id}/get/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_csv_batches/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_csv_batches/get/responses/200/content/application~1json/schema/properties/meta/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_csv_batches/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_csv_batches/post/requestBody/content/multipart~1form-data/schema/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_csv_batches/post/requestBody/content/multipart~1form-data/schema/required
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_csv_batches/post/responses/202/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_csv_batches/post/responses/202/content/application~1json/schema/properties/data/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_csv_batches/post/responses/202/content/application~1json/schema/properties/meta/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_csv_batches/post/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_csv_batches/post/responses/406/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_csv_batches/post/responses/406/content/application~1json/schema/properties/data/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_csv_batches/post/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_csv_batches/post/responses/422/content/application~1json/schema/properties/data/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_csv_batches/post/responses/422/content/application~1json/schema/properties/meta/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/get/responses/200/content/application~1json/schema/properties/data/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/get/responses/404/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/post/responses/201/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/post/responses/201/content/application~1json/schema/properties/data/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/post/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/post/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/delete/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/delete/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/delete/responses/404/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/patch/requestBody/content/application~1json/schema/properties/payout_request/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/patch/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/patch/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/patch/responses/404/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/patch/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft/patch/responses/422/content/application~1json/schema/properties/errors/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft~1publish/post/responses/201/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft~1publish/post/responses/201/content/application~1json/schema/properties/data/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft~1publish/post/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft~1publish/post/responses/404/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_draft~1publish/post/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_reason_codes/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_request_reason_codes/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1{reference}/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1{reference}/get/responses/200/content/application~1json/schema/properties/data/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1{reference}/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1{reference}/get/responses/404/examples
+    - '#/paths/~1api~1v1~1payouts~1payout_requests/get/responses/200/examples'
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests/get/responses/200/content/application~1json/schema/properties/meta/type
+    - '#/paths/~1api~1v1~1payouts~1payout_requests/get/responses/401/examples'
+    - '#/paths/~1api~1v1~1payouts~1product_schemas/get/responses/200/examples'
+    - '#/paths/~1api~1v1~1payouts~1product_schemas/get/responses/401/examples'
+    - '#/paths/~1api~1v1~1payouts~1product_schemas/get/responses/404/examples'
+    - >-
+      #/paths/~1api~1v1~1payouts~1schemas~1{id}~1csv_template/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1schemas~1{id}~1csv_template/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1schemas~1{id}~1csv_template/get/responses/404/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1stats~1reason_codes_reports/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1stats~1reason_codes_reports/get/responses/200/content/application~1json/schema/properties/data/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1stats~1state_category_counts_reports/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1stats~1state_category_counts_reports/get/responses/200/content/application~1json/schema/properties/meta/type
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1stats~1state_category_reason_code_counters/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1stats~1states_reports/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1stats~1states_reports/get/responses/200/content/application~1json/schema/properties/data/type
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1account_statement_reports/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1account_statement_reports/get/responses/200/content/application~1json/schema/properties/meta/type
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1account_statement_reports/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1account_statement_reports/get/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1organisations~1{organisation_id}~1accounts/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1funding/post/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1funding/post/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1funding/post/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1reports/post/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1reports/post/responses/202/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1reports/post/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1reports/post/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1reports~1{uuid}/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1reports~1{uuid}/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1reports~1{uuid}/get/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1reports~1{uuid}~1download/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1reports~1{uuid}~1download/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1reports~1{uuid}~1download/get/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1statement/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1statement/get/responses/200/content/application~1json/schema/properties/meta/type
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1statement/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1statement/get/responses/422/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1summary/get/responses/200/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1summary/get/responses/200/content/application~1json/schema/properties/data/type
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1summary/get/responses/401/examples
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1accounts~1{virtual_account_number}~1summary/get/responses/422/examples
+    - '#/paths/~1api~1v1~1reconciliation~1transactions/get/responses/200/examples'
+    - '#/paths/~1api~1v1~1reconciliation~1transactions/get/responses/401/examples'
+    - '#/paths/~1api~1v1~1reconciliation~1transactions/get/responses/422/examples'
+    - '#/paths/~1api~1v1~1system~1feature_flags/get/responses/200/examples'
+    - >-
+      #/paths/~1api~1v1~1system~1feature_flags/get/responses/200/content/application~1json/schema/properties/data/type
+    - '#/paths/~1api~1v1~1system~1feature_flags/get/responses/401/examples'
+  operation-4xx-response:
+    - '#/paths/~1api~1v1~1authentication~1passwords~1forgot/post/responses'
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1stats~1reason_codes_reports/get/responses
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1stats~1state_category_counts_reports/get/responses
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1stats~1state_category_reason_code_counters/get/responses
+    - >-
+      #/paths/~1api~1v1~1payouts~1payout_requests~1stats~1states_reports/get/responses
+    - >-
+      #/paths/~1api~1v1~1reconciliation~1organisations~1{organisation_id}~1accounts/get/responses
+  no-invalid-media-type-examples:
+    - >-
+      #/paths/~1api~1v1~1collection~1payments~1{uuid}/get/responses/200/content/application~1json/schema
+    - >-
+      #/paths/~1api~1v1~1collection~1payments~1find_by_uuid_or_inpay_unique_reference/get/responses/200/content/application~1json/schema
+  no-path-trailing-slash:
+    - '#/paths/~1api~1v1~1customer~1organisations~1{organisation_id}~1users~1'
+  security-defined:
+    - '#/paths/~1api~1v1~1authentication~1invitations~1accept/put'
+    - '#/paths/~1api~1v1~1authentication~1invitations~1validate/get'
+    - '#/paths/~1api~1v1~1authentication~1passwords~1forgot/post'
+    - '#/paths/~1api~1v1~1authentication~1passwords~1validate_reset_token/get'
+    - '#/paths/~1api~1v1~1authentication~1passwords~1reset/put'
+    - '#/paths/~1api~1v1~1authentication~1token/post'
+    - '#/paths/~1api~1v1~1customer~1organisations~1{id}~1configurations/get'
+    - '#/paths/~1api~1v1~1fx~1organisations~1{organisation_id}~1exchange_rate/get'
+    - '#/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches/get'
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1batches~1{id}/get
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1payout_drafts/get
+    - >-
+      #/paths/~1api~1v1~1payouts~1organisations~1{organisation_id}~1payout_drafts~1{id}/get
