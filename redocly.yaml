@@ -12,7 +12,7 @@ theme:
     theme:
       colors:
         primary:
-          main: "#32329f"
+          main: "#A020F0"
     generateCodeSamples:
       languages:  # Array of language config objects; indicates in which languages to generate code samples.
         - lang: curl
